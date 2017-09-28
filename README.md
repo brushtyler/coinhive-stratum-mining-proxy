@@ -39,13 +39,20 @@ Dependencies:
 ## Usage
 
 1. Install and Run `coinhive-stratum-mining-proxy`
-2. Load the Coinhive Miner
+2. Load the Coinhive Miner from your http server
 
 ```html
-<script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+<script src="https://url/to/your/coinhive/files/coinhive.min.js"></script>
 ```
 
-3. Change the `CoinHive.CONFIG.WEBSOCKET_SHARDS` config variable:
+3. Change the `CoinHive.CONFIG.LIB_URL` config variables to point to your files:
+```html
+<script>
+CoinHive.CONFIG.LIB_URL = "https://url/to/your/coinhive/files/"
+</script>
+```
+
+4. Change the `CoinHive.CONFIG.WEBSOCKET_SHARDS` config variable:
 
 ```html
 <script>
@@ -53,7 +60,7 @@ CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://localhost:8892/proxy"]];
 </script>
 ```
 
-4. Start Mining
+5. Start Mining
 
 ```html
 <script>
@@ -70,7 +77,7 @@ miner.start();
 </script>
 ```
 
-5. Profit!
+6. Profit!
 
 ## Demo
 
