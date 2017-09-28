@@ -22,11 +22,18 @@ $ docker run -p 8892:8892 coinhive-stratum-mining-proxy xmr.crypto-pool.fr 3333
 Linux/Mac:
 
 ```sh
-$ git clone git@github.com:x25/coinhive-stratum-mining-proxy.git
+$ git clone git@github.com:brushtyler/coinhive-stratum-mining-proxy.git
 $ cd coinhive-stratum-mining-proxy
 $ pip install -v -r requirements.txt
 $ python coinhive-stratum-mining-proxy.py <stratum tcp host> <stratum tcp port>
 ```
+
+eg:
+
+```sh
+$ python coinhive-stratum-mining-proxy.py xmr.crypto-pool.fr 3333
+```
+
 
 Dependencies:
 
